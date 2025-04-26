@@ -1,11 +1,11 @@
 var current = 0;
 var total = 4;
 
-var nextButton = document.getElementById("next");
-var previousButton = document.getElementById("previous");
+var Next = document.getElementById("next");
+var Prev = document.getElementById("previous");
 var slides = document.getElementsByClassName("slide");
 
-nextButton.onclick = function () {
+Next.onclick = function () {
   console.log("next");
 
   current = current + 1;
@@ -22,7 +22,7 @@ nextButton.onclick = function () {
   slides[current].style.display = "block";
 };
 
-previousButton.onclick = function () {
+Prev.onclick = function () {
   console.log("previous");
 
   current = current - 1;
